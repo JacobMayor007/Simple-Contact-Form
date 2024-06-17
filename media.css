@@ -20,6 +20,14 @@
     .heading{
         grid-row: 1/span2;
     }
+
+    #toast-message{
+        display: none;
+        top: 10px;
+        width: 300px;
+        height: 60px;
+        padding: 25px;
+    }
 }
 
 
