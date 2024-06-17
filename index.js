@@ -8,7 +8,6 @@ $("#submit-button").on("click", (event)=> {
     message = $("#message-textarea").val();
     query = $("input[name='query-type']:checked").val();
     consent = $("#consent-input").is(":checked");
-    alert(lName);
 
     if(fName !== '' && lName !== '' && email !== '' && query !== '' && message !== '' && consent){
         $("#toast-message").slideDown(1000).css({
