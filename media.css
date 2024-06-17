@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
     #container{
         height: 200vh;
     }
@@ -23,7 +23,7 @@
 
     #toast-message{
         display: none;
-        top: 10px;
+        top: 20px;
         width: 300px;
         height: 60px;
         padding: 25px;
