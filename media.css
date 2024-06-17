@@ -1,0 +1,30 @@
+@media screen and (max-width: 375px) {
+    #container{
+        height: 200vh;
+    }
+
+    #contactForm{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 65%;
+        height: 160vh;
+        padding: 40px 50px 40px 35px;
+    }
+        .heading, .email, .query, .message, .consent, .submit, .consent-error {
+            grid-column: 1 / 2;
+        }
+    .lastName-label{
+        grid-row: start 3;
+    }
+
+    .heading{
+        grid-row: 1/span2;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .heading {
+            grid-row: 1/span2;
+        }
+}

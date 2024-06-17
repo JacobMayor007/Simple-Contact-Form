@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(186, 15%, 59%);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+
+}
+
+#contactForm{
+    display: grid;
+    height: 100vh;
+    padding: 40px 50px 40px 35px;
+    width: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px;
+    background-color: hsl(0, 0%, 100%);
+    column-gap: 15px;
+    border-radius: 15px;
+
+}
+
+.heading,.email, .query, .message, .consent, .submit, .consent-error{
+    grid-column: 1 / 3;
+}
+
+   .heading {
+       grid-row: 1/span2;
+   }
+
+
+.name{
+    grid-column: 1/2;
+}
+
+input, #submit-button{
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#consent-input, #genquiry, #rSupport{
+    width: 14px;
+}
+
+#submit-button{
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+}
+
+.consent, .radio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.consent-label, .query-label{
+    cursor: pointer;
+}
+
+.radio{
+    border: solid 2px;
+    padding-left:10px;
+    border-radius: 5px;
+    height: 36px;
+}
+
+.error{
+    margin: 15px 0;
+    display: none;
+}
+
+label, input, button{
+    font-size: 16px;
+    font-family: 'Karla';
+}
+
+#toast-message{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: hsl(187, 24%, 22%);
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    color: hsl(0, 0%, 100%); */
+}

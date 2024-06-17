@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="media.css">
+
+  <title>Frontend Mentor | Contact form</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+      <form action="" id="contactForm">
+        <div class="heading"><h1>Contact Us</h1></div>
+        <div class="name"><label for="">First Name *</label></div><div class="lastName-label" ><label for="">Last Name *</label></div>
+        <div><input id="fName-input" type="text"><p class="fName-error error">This field is required</p></div><div><input id="lName-input" type="text"><p class="lName-error error">This field is required</p></div>
+        <div class="email"><label for="">Email Address *</label></div>
+        <div class="email"><input type="text" id="email-input"><p class="email-error error">Please enter a valid email address</p></div>
+        <div class="query">Query Type *</div>
+        <div class="radio"><input type="radio" name="query-type" id="genquiry" value="General Inquiry"><label class="query-label" for="genquiry">General Inquiry</label></div><div class="radio"><input type="radio" name="query-type" id="rSupport" value="Support Request"><label class="query-label" for="rSupport">Support Request</label></div>
+        <p class="query-error error">Please select a query type</p>
+        <div class="message"> <label for=""></label>Message *</div>
+        <div class="message"><textarea name="message" id="message-textarea"></textarea></div>
+        <p class="message-error error">This field is required</p>
+        <div class="consent"><input type="checkbox" name="" id="consent-input"> <label class="consent-label" for="consent-input">I consent being contacted by the team *</label></div>
+        <p class="consent-error error">To submit this form, please consent to being contacted</p>
+        <div class="submit"><button type="submit" id="submit-button">Submit</button></div>
+      </form>
+    <div id="toast-message">
+      <h4><i class="fa-regular fa-circle-check"></i> Message Sent</h4>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://www.facebook.com/mayortapere218" target="_blank">Jacob Mary Tapere</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
