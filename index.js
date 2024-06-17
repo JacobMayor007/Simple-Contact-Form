@@ -17,7 +17,6 @@ $("#submit-button").on("click", (event)=> {
         paddingLeft: "40px" ,
         borderRadius: "15px",
         color: "white",
-        
             });
         setTimeout(()=>{
             $("#toast-message").slideUp(1000);
@@ -85,27 +84,4 @@ var isValidEmail = (email) =>{
 
 
 
-// function sendEmail(fName, lName, email, query, message) {
-//     var bodyMessage  = `Full Name: ${fName} ${lName}<br>Email: ${email} <br> Message: ${message}`;
-
-//     if(email !== email){
-//         Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "jasdjkajsdqwei@gmail.com",
-//         Password : "79B0A934D8699E32E5A3E27E677CF4D352A",
-//         To : 'jasdjkajsdqwei@gmail.com',
-//         From : email,
-//         Subject : query,
-//         Body : bodyMessage,
-//     }).then(
-//         message => {
-//             alert(message);
-//             $("#contactForm")[0].reset();
-//         }
-//     );
-//     }
-//     else{
-//         return false;
-//     }
-// }
 
